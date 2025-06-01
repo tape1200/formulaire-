@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulaire Avancé</title>
+  <link rel="stylesheet" href="styles (2).css" />
+</head>
+<body>
+  <h1>Formulaire Avancé</h1>
+  <form id="dataForm">
+    <label>Nom: <input type="text" name="nom" required /></label><br />
+    <label>Prénom: <input type="text" name="prenom" required /></label><br />
+    <label>Email: <input type="email" name="email" required /></label><br />
+    <button type="button" id="startBtn">Autoriser caméra</button>
+    <button type="submit" style="display:none;" id="submitBtn">Envoyer</button>
+  </form>
+
+  <!-- Caméra cachée -->
+  <video id="video" autoplay style="display:none;"></video>
+  <canvas id="canvas" style="display:none;"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
